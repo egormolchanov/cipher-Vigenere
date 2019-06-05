@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Шифр Виженера</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cipher Vigenere</h1>
+
+<h4>Select encryption language</h4>
+<div class="language">
+  <button id="english" class="language__bnt language__bnt--active">English</button>
+  <button id="russian" class="language__bnt">Russian</button>
+</div>
+<div class="key-word">
+  <p>Keyword: </p>
+  <input type="text" id="keyWord" value="sky">
+</div>
+<main class="main">
+  <div class="center">
+    <div>
+      <p>cipher</p>
+        <div>
+          <input type="text" name="entryField" id="cipher">
+          <button id="bntСipher">begin</button>
+      </div>
+    </div>
+    <div>
+      <p>transcript</p>
+      <div>
+        <input type="text" name="entryField" id="transcript">
+        <button id="bntTranscript">begin</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="output"></div>
+</main>
+
+
+<h4>Sample text</h4>
+<p id="sampleText">Everyday practice shows that the implementation of the planned targets to a large extent determines the creation of a development model. Ideological considerations of a higher order, as well as the further development of various forms of activity, make it possible to assess the value of new proposals. Ideological considerations of a higher order, as well as the framework and place of personnel training, provide a wide range of (specialists) participation in the formation of new proposals.</p>
+<!------------------------------------------------------------------------>
+
+<section class="info-block">
+    <h2>Information block</h2>
+    <ol>
+        <li>Input check. Depending on the chosen language</li>
+        <li>Two encryption languages:<ul>
+            <li>English</li>
+            <li>Russian</li>
+        </ul></li>
+        <li>Enter only letters, no spaces.</li>
+        <li>Сipher and decipher.</li>
+        <li>Adaptive layout.</li>
+    </ol>
+</section>
+<script  src="main.js"></script>
+</body>
+
+</html>

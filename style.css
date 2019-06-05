@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    background: #415a74;
+    color: white;
+}
+
+h1, h4 {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e2a3f;
+}
+
+button:active {
+    background: #263550;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    background: #18202e;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    padding: 5px;
+}
+
+/****************************************/
+/*Button larguage START*/
+
+.language {
+    display: flex;
+    justify-content: center;
+}
+
+.language__bnt {
+    padding: 5px;
+}
+
+.language__bnt--active {
+    background: #27354d;
+}
+
+.language__bnt:nth-child(1) {
+    border-right: 2px solid #415a74;
+}
+
+/*Button larguage END*/
+/*******************************************/
+/*style keyword START*/
+
+.key-word {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.key-word input {
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.key-word p {
+    background: #18202e;
+    padding: 5px;
+}
+
+/*style keyword END*/
+/*******************************************/
+/*main unit START*/
+
+.main {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    margin: -10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+} 
+
+.center button {
+    margin-left: -5px;
+    border-left: 2px solid  #415a74;
+}
+
+.center > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#output {
+    height: 120px;
+    max-width: 300px;
+    width: 100%;
+    background: #18202e;
+    padding: 10px;
+    overflow: auto;
+}
+
+/*main unit END*/
+/*********************************************/
+
+#sampleText {
+    margin: 10px auto; 
+    width: 100%;
+    max-width: 550px;
+    min-width: 300px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 510px) {
+    .main {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+    }
+
+    .center > div p {
+        text-align: center;
+    }
+
+    #output {
+        width: 80vw;
+    }
+}
+
+/*************************************************/
+/* info block style START */
+
+.info-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    min-width: 270px;
+    max-width: 400px;
+    background: wheat;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Signika', sans-serif;
+    color: black;
+}
+
+.info-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.info-block ol {
+    padding-left: 1.25rem;
+}
+
+.info-block li {
+    line-height: 1.5;
+}
+
+/*info blok style   END*/
